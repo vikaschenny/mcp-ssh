@@ -81,6 +81,21 @@ Perfect! The setup is complete. Let me create a summary of what we've accomplish
     }
   }
 }
+
+{
+  "mcpServers": {
+    "mcp-ssh-local": {
+      "command": "powershell.exe",
+      "args": ["-Command", "node C:\\poc_demo_working\\mcp-ssh-config\\src\\mcp-ssh-server-with-key.js"],
+      "env": {
+        "SSH_HOST": "198.168.1.1",
+        "SSH_USERNAME": "user",
+        "SSH_PRIVATE_KEY_PATH": "C:\\keys\\key.key",
+        "SSH_PORT": "22"
+      }
+    }
+  }
+}
 ```
 
 #### Step 2: Start the MCP Server
