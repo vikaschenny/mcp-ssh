@@ -1,0 +1,81 @@
+﻿{
+  "system_info": {
+    "hostname": "localhost.localdomain",
+    "os": "CentOS Linux release 7.9.2009 (Core)",
+    "kernel": "3.10.0-1160.el7.x86_64",
+    "architecture": "x86_64",
+    "uptime": "13 weeks, 6 days, 21 hours, 49 minutes",
+    "timestamp": "2025-08-20T18:52:31Z"
+  },
+  "cpu_info": {
+    "model": "Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz",
+    "cores": "2",
+    "threads_per_core": "1",
+    "cpu_mhz": "2199.998",
+    "cache_size": "56320K"
+  },
+  "cpu_usage": {
+    "load_average_1min": "0.00",
+    "load_average_5min": "0.01",
+    "load_average_15min": "0.05",
+    "cpu_utilization": "2.9%"
+  },
+  "memory_info": {
+    "total": "3.7G",
+    "used": "2.3G",
+    "free": "574M",
+    "available": "1.1G",
+    "usage_percent": 61.5,
+    "swap_total": "3.0G",
+    "swap_used": "24M",
+    "swap_free": "3.0G"
+  },
+  "disk_info": {
+    "filesystems": [
+      {"filesystem": "devtmpfs","size": "1.9G","used": "0","available": "1.9G","use_percent": "0%","mount_point": "/dev"},
+      {"filesystem": "tmpfs","size": "1.9G","used": "0","available": "1.9G","use_percent": "0%","mount_point": "/dev/shm"},
+      {"filesystem": "tmpfs","size": "1.9G","used": "58M","available": "1.8G","use_percent": "4%","mount_point": "/run"},
+      {"filesystem": "tmpfs","size": "1.9G","used": "0","available": "1.9G","use_percent": "0%","mount_point": "/sys/fs/cgroup"},
+      {"filesystem": "/dev/mapper/centos-root","size": "26G","used": "14G","available": "13G","use_percent": "52%","mount_point": "/"},
+      {"filesystem": "/dev/sda2","size": "1014M","used": "173M","available": "842M","use_percent": "18%","mount_point": "/boot"},
+      {"filesystem": "/dev/sda1","size": "200M","used": "12M","available": "189M","use_percent": "6%","mount_point": "/boot/efi"},
+      {"filesystem": "tmpfs","size": "379M","used": "0","available": "379M","use_percent": "0%","mount_point": "/run/user/1000"}
+    ],
+    "physical_disks": [
+      {"name": "sda", "size_gb": 30, "model": "Virtual disk", "type": "HDD"}
+    ]
+  },
+  "network_info": {
+    "interfaces": [
+
+    ],
+    "connections": {
+      "established": "0",
+      "listening": "0"
+    }
+  },
+  "process_info": {
+    "total_processes": "218",
+    "running_processes": "1",
+    "sleeping_processes": "70",
+    "top_processes_by_cpu": [
+      {"user": "user1", "pid": "1160", "cpu": "1.0", "memory": "0.0", "command": "/bin/bash /home/user1/system_resources_simple.sh"},      {"user": "user1", "pid": "13006", "cpu": "0.3", "memory": "19.8", "command": "/opt/java/openjdk/bin/java -XX:+UseG1GC -Djava.io.tmpdir=/opt/sonarqube/temp -XX:ErrorFile=/opt/sonarqube/logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djna.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j2.formatMsgNoLookups=true -Djava.locale.providers=COMPAT -Dcom.redhat.fips=false -Des.enforce.bootstrap.checks=true -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Des.path.home=/opt/sonarqube/elasticsearch -Des.path.conf=/opt/sonarqube/temp/conf/es -Des.distribution.flavor=default -Des.distribution.type=tar -Des.bundled_jdk=false -cp /opt/sonarqube/elasticsearch/lib/* org.elasticsearch.bootstrap.Elasticsearch"},      {"user": "user1", "pid": "13266", "cpu": "0.3", "memory": "12.0", "command": "/opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Dcom.redhat.fips=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-9.9.8.100196.jar:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.5.1.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process11290534536941534314properties"},      {"user": "user1", "pid": "13145", "cpu": "0.2", "memory": "14.5", "command": "/opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Dcom.redhat.fips=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-9.9.8.100196.jar:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.5.1.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process8406649809119456005properties"},      {"user": "root", "pid": "3786", "cpu": "0.1", "memory": "0.1", "command": "/usr/bin/containerd-shim-runc-v2 -namespace moby -id 3767cfcdafca1dc91ae00b5ef75e40cc22fe48050175a674b2474209a54bcdca -address /var/run/docker/containerd/containerd.sock"}
+    ],
+    "top_processes_by_memory": [
+      {"user": "user1", "pid": "13006", "cpu": "0.3", "memory": "19.8", "command": "/opt/java/openjdk/bin/java -XX:+UseG1GC -Djava.io.tmpdir=/opt/sonarqube/temp -XX:ErrorFile=/opt/sonarqube/logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djna.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j2.formatMsgNoLookups=true -Djava.locale.providers=COMPAT -Dcom.redhat.fips=false -Des.enforce.bootstrap.checks=true -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Des.path.home=/opt/sonarqube/elasticsearch -Des.path.conf=/opt/sonarqube/temp/conf/es -Des.distribution.flavor=default -Des.distribution.type=tar -Des.bundled_jdk=false -cp /opt/sonarqube/elasticsearch/lib/* org.elasticsearch.bootstrap.Elasticsearch"},      {"user": "user1", "pid": "13145", "cpu": "0.2", "memory": "14.5", "command": "/opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Dcom.redhat.fips=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-9.9.8.100196.jar:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.5.1.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process8406649809119456005properties"},      {"user": "user1", "pid": "13266", "cpu": "0.3", "memory": "12.0", "command": "/opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Dcom.redhat.fips=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-9.9.8.100196.jar:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.5.1.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process11290534536941534314properties"},      {"user": "user1", "pid": "12948", "cpu": "0.1", "memory": "2.4", "command": "/opt/java/openjdk/bin/java -jar lib/sonarqube.jar -Dsonar.log.console=true"},      {"user": "root", "pid": "17081", "cpu": "0.0", "memory": "0.7", "command": "dockerd"}
+    ]
+  },
+  "performance_metrics": {
+    "load_average_per_core": "0",
+    "context_switches_per_sec": "443",
+    "interrupts_per_sec": "233",
+    "io_wait_percent": "0%"
+  },
+  "system_services": {
+    "running_services": "27",
+    "failed_services": "2",
+    "sshd_status": "active",
+    "firewalld_status": "active"
+  }
+}
+

@@ -1,0 +1,96 @@
+{
+  "// Example 1": "Password Authentication Only",
+  "mcpServers_password": {
+    "mcp-ssh-local": {
+      "command": "node",
+      "args": ["C:\\poc_demo\\mcp-ssh-config\\src\\mcp-ssh-server-with-key.js"],
+      "env": {
+        "SSH_HOST": "10.20.17.38",
+        "SSH_USERNAME": "user1",
+        "SSH_PASSWORD": "g0]5(H0?"
+      }
+    }
+  },
+  
+  "// Example 2": "Private Key File (PEM/PPK) - No Password",
+  "mcpServers_key_file": {
+    "mcp-ssh-local": {
+      "command": "node",
+      "args": ["C:\\poc_demo\\mcp-ssh-config\\src\\mcp-ssh-server-with-key.js"],
+      "env": {
+        "SSH_HOST": "10.20.17.38",
+        "SSH_USERNAME": "user1",
+        "SSH_PRIVATE_KEY_PATH": "C:\\Users\\YourUsername\\.ssh\\id_rsa"
+      }
+    }
+  },
+  
+  "// Example 3": "Private Key with Passphrase",
+  "mcpServers_key_with_passphrase": {
+    "mcp-ssh-local": {
+      "command": "node",
+      "args": ["C:\\poc_demo\\mcp-ssh-config\\src\\mcp-ssh-server-with-key.js"],
+      "env": {
+        "SSH_HOST": "10.20.17.38",
+        "SSH_USERNAME": "user1",
+        "SSH_PRIVATE_KEY_PATH": "C:\\Users\\YourUsername\\.ssh\\id_rsa",
+        "SSH_KEY_PASSPHRASE": "your-key-passphrase"
+      }
+    }
+  },
+  
+  "// Example 4": "Both Password and Key (Key takes precedence)",
+  "mcpServers_both": {
+    "mcp-ssh-local": {
+      "command": "node",
+      "args": ["C:\\poc_demo\\mcp-ssh-config\\src\\mcp-ssh-server-with-key.js"],
+      "env": {
+        "SSH_HOST": "10.20.17.38",
+        "SSH_USERNAME": "user1",
+        "SSH_PASSWORD": "g0]5(H0?",
+        "SSH_PRIVATE_KEY_PATH": "C:\\Users\\YourUsername\\.ssh\\id_rsa"
+      }
+    }
+  },
+  
+  "// Example 5": "PPK File (PuTTY Private Key)",
+  "mcpServers_ppk": {
+    "mcp-ssh-local": {
+      "command": "node",
+      "args": ["C:\\poc_demo\\mcp-ssh-config\\src\\mcp-ssh-server-with-key.js"],
+      "env": {
+        "SSH_HOST": "10.20.17.38",
+        "SSH_USERNAME": "user1",
+        "SSH_PRIVATE_KEY_PATH": "C:\\Users\\YourUsername\\.ssh\\private-key.ppk"
+      }
+    }
+  },
+  
+  "// Example 6": "AWS EC2 Instance with PEM file",
+  "mcpServers_aws": {
+    "mcp-ssh-aws": {
+      "command": "node",
+      "args": ["C:\\poc_demo\\mcp-ssh-config\\src\\mcp-ssh-server-with-key.js"],
+      "env": {
+        "SSH_HOST": "ec2-xx-xx-xx-xx.compute.amazonaws.com",
+        "SSH_USERNAME": "ec2-user",
+        "SSH_PRIVATE_KEY_PATH": "C:\\aws\\keys\\my-instance.pem",
+        "SSH_PORT": "22"
+      }
+    }
+  },
+  
+  "// Example 7": "Custom SSH Port with Key",
+  "mcpServers_custom_port": {
+    "mcp-ssh-local": {
+      "command": "node",
+      "args": ["C:\\poc_demo\\mcp-ssh-config\\src\\mcp-ssh-server-with-key.js"],
+      "env": {
+        "SSH_HOST": "10.20.17.38",
+        "SSH_PORT": "2222",
+        "SSH_USERNAME": "user1",
+        "SSH_PRIVATE_KEY_PATH": "C:\\Users\\YourUsername\\.ssh\\id_rsa"
+      }
+    }
+  }
+}

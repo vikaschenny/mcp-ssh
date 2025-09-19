@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mcp-ssh-local": {
+      "command": "node",
+      "args": ["C:\\poc_demo\\mcp-ssh-config\\src\\mcp-ssh-server.js"],
+      "env": {
+        "SSH_HOST": "10.20.17.38",
+        "SSH_USERNAME": "user1",
+        "SSH_PASSWORD": "g0]5(H0?"
+      }
+    }
+  }
+}

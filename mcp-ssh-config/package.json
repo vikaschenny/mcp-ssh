@@ -1,0 +1,20 @@
+{
+  "name": "mcp-ssh-local",
+  "version": "1.0.0",
+  "description": "MCP SSH Server for Cursor AI Integration",
+  "main": "src/mcp-ssh-server.js",
+  "bin": {
+    "mcp-ssh-local": "./src/mcp-ssh-server.js"
+  },
+  "scripts": {
+    "start": "node src/mcp-ssh-server.js",
+    "mcp": "node src/mcp-ssh-server.js",
+    "http-server": "node src/simple-ssh-server.js",
+    "test": "node test-connection.js"
+  },
+  "dependencies": {
+    "ssh2": "^1.15.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
